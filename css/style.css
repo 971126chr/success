@@ -16,12 +16,14 @@ label {
     padding: 16px 1px 20px;
     position: relative;
 }
-h1.header-h1 {
+h1.header-h1, h1.header-h1 a {
+    display: inline-block;
+    vertical-align: top;
+}
+h1.header-h1 a {
     font-size: 0;
     background: url("../img/header/h1.png") no-repeat left top;
-    display: inline-block;
     padding: 22.5px 84.5px;
-    vertical-align: top;
 }
 ul.header-top-list {
     font-family: "윤고딕350";
@@ -188,13 +190,13 @@ ul.ceo-circle-list li a.section-img-circle {
 ul.ceo-circle-list li:hover {
     background: url("../img/section/ceo-circle-hover.png") no-repeat;
 }
-.section > div:not(:first-child), .column-right > div:not(:nth-child(2)) {
+.section > div:not(:first-child), .column-right > div:not(:nth-child(2)), .column-bottom {
     border-top: 1px solid #e2e2e2;
     border-right: 1px solid #d7d7d7;
     border-bottom: 1px solid #d9d9d9;
     border-left: 1px solid #dadada;
 }
-.section > div:not(:first-child) {
+.section > div:not(:first-child), .column-right > .the-place-review, .column-bottom {
     margin-top: 9px;
 }
 .the-academy {
@@ -212,9 +214,12 @@ ul.ceo-circle-list li:hover {
     padding-left: 14px;
 }
 h2.the-academy-h2 {
+    display: flex;
+}
+h2.the-academy-h2 a {
     font-size: 0;
     background: url("../img/section/the-academy.png") no-repeat left center;
-    padding: 16px 46px 20px;
+    padding: 16px 62px 20px;
 }
 .the-academy-text-list-box {
     padding: 11px 0 11px 14px;
@@ -263,16 +268,17 @@ ul.the-academy-list li a {
 
 .column-right {
     display: inline-block;
-    width: 240px;
+    width: 241px;
     vertical-align: top;
-    margin: -1px 0 0 3px;
+    margin: -1px 0 0 2px;
 }
 .login-box {
     background: url("../img/column-right/login-bg.png") repeat-x;
     height: 214px;
+    margin-left: 1px;
 }
 .login {
-    padding: 15px 17px 13px 15px;
+    padding: 15px 16px 13px 15px;
     text-align: center;
 }
 input.login-text-box {
@@ -339,10 +345,10 @@ ul.find-id-list li a {
     letter-spacing: -1px;
 }
 .notice {
-    padding: 14px 16px 0 14px;
+    padding: 14px 15px 0 14px;
     position: relative;
 }
-h2.notice-h2 {
+h2.notice-h2 a {
     font-size: 0;
     background: url("../img/column-right/notice-h2.png") no-repeat;
     padding: 7.5px 24px;
@@ -368,7 +374,7 @@ span.notice-list-date {
     letter-spacing: 0;
     margin-left: -0.4px;
 }
-span.notice-more {
+a.notice-more {
     font-size: 0;
     background: url("../img/column-right/notice-more.png") no-repeat;
     padding: 2.5px 14.5px;
@@ -390,4 +396,96 @@ button.the-academy-btn {
     background: url("../img/column-right/the-academy-green-btn.png") no-repeat;
     padding: 29.5px 59px;
     margin-left: 5px;
+}
+.the-place-review {
+    padding: 13px 15px 11px 12px;
+    position: relative;
+}
+h2.the-place-review-h2 a {
+    font-size: 0;
+    background: url("../img/column-right/the-place-review-h2.png") no-repeat;
+    padding: 6px 50px;
+    display: inline-block;
+    vertical-align: top;
+}
+a.the-place-review-img {
+    margin-top: 8px;
+    display: block;
+    font-size: 11px;
+    color: #000000;
+}
+span.the-place-review-border-gray {
+    border: 1px solid #bbbbbb;
+    display: inline-block;
+    width: 94px;
+    height: 60px;
+}
+span.the-place-review-border-white {
+    border: 3px solid #ffffff;
+    display: inline-block;
+    width: 92px;
+    height: 58px;
+}
+.the-place-review > a.notice-more {
+    top: 16px;
+}
+span.review-img-right-p {
+    display: inline-block;
+    line-height: 15px;
+    margin-left: 4px;
+    letter-spacing: -0.3px;
+    vertical-align: top;
+    padding-top: 1px;
+}
+span.revew-img-right {
+    display: inline-block;
+    line-height: 23px;
+    border-top: 1px dotted #d3d3d3;
+    border-bottom: 1px dotted #d3d3d3;
+    margin-top: 4px;
+    width: 100%;
+}
+strong.review-write-name {
+    color: #ff6f00;
+    font-weight: normal;
+}
+span.review-p {
+    color: #505050;
+    line-height: 16px;
+    letter-spacing: -0.9px;
+    margin: 9px 0 0 -1px;
+    display: block;
+}
+
+/*column-bottom 시작*/
+
+.column-bottom {
+    display: inline-block;
+}
+.column-bottom > div {
+    background: url("../img/column-bottom/column-bottom-content-bg.png") repeat-x;
+}
+.success-inside {
+    display: inline-block;
+    width: 233px;
+    padding: 14px 13px 10px 8px;
+}
+.inside-h2-padding {
+    padding-left: 5px;
+}
+h2.inside-h2 {
+    font-size: 0;
+    background: url("../img/column-bottom/inside-h2.png") no-repeat;
+    padding: 7px 49.5px;
+}
+.inside-story {
+    background: url("../img/column-bottom/story-left-bg.png") no-repeat left top;
+    padding-left: 88px;
+    font-size: 11px;
+    color: #000000;
+    margin-top: 11px;
+    line-height: 14px;
+}
+p.gray-text {
+    color: #8e8f8f;
 }
