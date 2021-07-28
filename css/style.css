@@ -190,7 +190,7 @@ ul.ceo-circle-list li a.section-img-circle {
 ul.ceo-circle-list li:hover {
     background: url("../img/section/ceo-circle-hover.png") no-repeat;
 }
-.section > div:not(:first-child), .column-right > div:not(:nth-child(2)), .column-bottom {
+.section > div:not(:first-child), .column-right > div:not(:nth-child(2)), .column-bottom > div {
     border-top: 1px solid #e2e2e2;
     border-right: 1px solid #d7d7d7;
     border-bottom: 1px solid #d9d9d9;
@@ -374,7 +374,7 @@ span.notice-list-date {
     letter-spacing: 0;
     margin-left: -0.4px;
 }
-a.notice-more {
+a.notice-more,  a.column-bottom-more{
     font-size: 0;
     background: url("../img/column-right/notice-more.png") no-repeat;
     padding: 2.5px 14.5px;
@@ -459,16 +459,15 @@ span.review-p {
 
 /*column-bottom 시작*/
 
-.column-bottom {
-    display: inline-block;
-}
 .column-bottom > div {
     background: url("../img/column-bottom/column-bottom-content-bg.png") repeat-x;
-}
-.success-inside {
     display: inline-block;
     width: 233px;
-    padding: 14px 13px 10px 8px;
+    position: relative;
+    vertical-align: top;
+}
+.success-inside {
+    padding: 14px 13px 12px 8px;
 }
 .inside-h2-padding {
     padding-left: 5px;
@@ -480,12 +479,105 @@ h2.inside-h2 {
 }
 .inside-story {
     background: url("../img/column-bottom/story-left-bg.png") no-repeat left top;
-    padding-left: 88px;
+    padding: 0 0 10px 88px;
     font-size: 11px;
     color: #000000;
     margin-top: 11px;
     line-height: 14px;
+    letter-spacing: 0.8px;
+    border-bottom: 1px dotted #b2b2b2;
 }
 p.gray-text {
     color: #8e8f8f;
+    margin-top: 7px;
+    letter-spacing: -0.9px;
+}
+.time-seminar-box {
+    padding-left: 5px;
+}
+.time-seminar {
+    background: url("../img/column-bottom/seminar-left-bg.png") no-repeat left top;
+    border-bottom: none;
+    padding: 0 0 0 83px;
+}
+.time-seminar > p.gray-text {
+    letter-spacing: -1.1px;
+}
+a.column-bottom-more {
+    background: url("../img/column-bottom/column-bottom-more.png") no-repeat;
+    top: 18px;
+    right: 14px;
+}
+.success-story {
+    padding: 14px 13px 12px;
+    margin-left: 1px;
+}
+h2.success-story-h2 {
+    font-size: 0;
+    background: url("../img/column-bottom/success-story-h2.png") no-repeat;
+    padding: 7px 43px;
+}
+.success-story > div.inside-story {
+    background: url("../img/column-bottom/success-story-bg.png") no-repeat left top;
+    padding: 0 0 10px 98px;
+}
+.success-story > div.time-seminar, .long-run-event, .design {
+    background: none;
+    padding: 0;
+}
+img.campaign-img, .campaign-img {
+    border: 1px solid #bbbbbb;
+    vertical-align: baseline;
+}
+.campaign-text {
+    display: inline-block;
+    margin-left: 6.4px;
+}
+.the-items {
+    padding: 15px 13px 12px;
+    margin-left: 2px;
+}
+h2.the-items-h2 {
+    font-size: 0;
+    background: url("../img/column-bottom/the-items-h2.png") no-repeat;
+    padding: 6px 32.5px;
+}
+.long-run-event {
+    margin-top: 11px;
+    padding-bottom: 11px;
+}
+.campaign-img {
+    display: inline-block;
+    vertical-align: top;
+}
+img.design-img {
+    display: inline-block;
+    border: 3px solid #ffffff;
+}
+.column-bottom > .using-information {
+    padding: 12px 12px 15px 11px;
+    width: 241px;
+    margin-left: 2px;
+}
+h2.using-information-h2 {
+    font-size: 0;
+    background: url("../img/column-bottom/use-information-h2.png") no-repeat;
+    padding: 7.5px 49.5px;
+}
+.information-orange {
+    padding: 0 1px;
+    margin-top: 12px;
+}
+.information-orange-text {
+    font-size: 0;
+    background: url("../img/column-bottom/1644-3025.png") no-repeat left top;
+    padding: 30.5px 106.5px 42.5px;
+    display: inline-block;
+    border-bottom: 1px dotted #b2b2b2;
+}
+.information-green {
+    font-size: 0;
+    background: url("../img/column-bottom/2006-9005.png") no-repeat;
+    padding: 30px 108px;
+    margin-top: 11px;
 }
