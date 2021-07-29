@@ -32,7 +32,7 @@ ul.header-top-list {
     right: 0;
 }
 ul.header-top-list::after, ul.nav-list::after, ul.nav-hover-list::after, 
-ul.ceo-circle-list::after, ul.the-academy-list::after, ul.find-id-list::after {
+ul.ceo-circle-list::after, ul.the-academy-list::after, ul.find-id-list::after, ul.footer-list::after {
     display: inline-block;
     content: "";
     clear: both;
@@ -580,4 +580,67 @@ h2.using-information-h2 {
     background: url("../img/column-bottom/2006-9005.png") no-repeat;
     padding: 30px 108px;
     margin-top: 11px;
+}
+
+/*footer 시작*/
+
+.footer {
+    width: 100%;
+    border: 1px solid #dadada;
+    background: #fafafa;
+    margin-top: 10px;
+}
+.footer-content {
+    width: 962px;
+    margin: 0 auto;
+    padding-bottom: 2px;
+    line-height: 38px;
+    position: relative;
+}
+ul.footer-list {
+    display: inline-block;
+}
+ul.footer-list li {
+    float: left;
+}
+ul.footer-list li a {
+    font-size: 11px;
+    color: #858585;
+    letter-spacing: -1px;
+}
+ul.footer-list li:not(:last-child) {
+    background: url("../img/footer/footer-list-line.png") no-repeat right center;
+}
+ul.footer-list li:not(:last-child) a {
+    padding-right: 11px;
+}
+ul.footer-list li:not(:first-child) a {
+    padding-left: 10px;
+}
+select.footer-select {
+    border: 1px solid #cdcdcd;
+    color: #858585;
+    font-size: 11px;
+    width: 125px;
+    height: 20px;
+    position: absolute;
+    top: 11px;
+    right: 0;
+    padding-left: 2px;
+    letter-spacing: 0.3px;
+}
+.footer-bottom {
+    margin: 0 auto;
+    width: 962px;
+    padding-top: 14px;
+}
+img.footer-bottom-logo {
+    vertical-align: top;
+}
+.footer-bottom-text {
+    display: inline-block;
+    margin: 11px 0 0 31px;
+}
+img.copyright {
+    margin-top: 3px;
 }
